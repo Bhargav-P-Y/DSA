@@ -1,2 +1,0 @@
-Squares of a sorted array:
-The ends have the greatest numbers, use l & r, square, compare insert from end
