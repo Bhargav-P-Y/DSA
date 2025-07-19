@@ -1,4 +1,4 @@
 # DSA
 DSA Pattern wise
 
-This repository is to document the one liners to solve problems
+This repository is to document the one liners & code to solve problems
