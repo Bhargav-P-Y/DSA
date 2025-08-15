@@ -1,3 +1,37 @@
+//Creating an array storing value as index can take too much memory
+//So? Use the size of the array as the size of the frequency array!
+
+class Solution {
+public:
+    vector<int> topKFrequent(vector<int>& nums, int k) {
+        //Create a vector of size n
+        //Indices are the frequencies
+        //Values are the array elements with that frequency
+
+        int n = nums.size();
+        unordered_map<int, int> mp;
+        vector<vector<int>> eles(n+1);
+        vector<int> res;
+        
+        for(int i = 0;i<n;i++)
+            mp[nums[i]]++;
+        
+        for(auto entry: mp)
+            eles[entry.second].push_back(entry.first);
+        
+        for(int i = n;i>=0;i--)
+        {
+            for(int n: eles[i])
+                res.push_back(n);
+                if(res.size() == k)
+                    return res;
+            
+        }
+    }
+};
+
+
+
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
@@ -37,5 +71,6 @@ public:
     }
 
 };
+
 
 
