@@ -1,0 +1,14 @@
+class Solution {
+public:
+    int characterReplacement(string s, int k) {
+        //Keep a map to track the character & frequencies
+        //if mp size > k or Sum of frequecies of charaters apart from
+        //left exceeds k
+        //start shrinking from left & reduce the frequency
+        //if frequency becomes 0, erase that key
+        //if the character at right, matches left grow
+        //otherwise, add it to the map & check if it's possible to grow
+        
+        
+    }
+};
