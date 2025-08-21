@@ -3,6 +3,8 @@
 //Be careful while shrinking
 //You might accidentally expand
 
+//abba : Can grow if seen[s[r]] >= l is skipped
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) 
@@ -21,3 +23,4 @@ public:
         
     }
 };
+
