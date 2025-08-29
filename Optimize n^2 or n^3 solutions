@@ -1,0 +1,10 @@
+Are we doing redundant work?
+If yes, these can help avoid it
+
+Hashing
+Two Pointers
+Sliding Window
+Dynamic programming
+
+Check if something is feasible before doing something [Recursion etc]
+Store variables instead of repeatedly scanning stuff
