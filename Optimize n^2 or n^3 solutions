@@ -13,3 +13,6 @@ Dynamic programming
 
 Check if something is feasible before doing something [Recursion etc]
 Store variables instead of repeatedly scanning stuff
+
+Have a goal?
+Work backwards from it!
