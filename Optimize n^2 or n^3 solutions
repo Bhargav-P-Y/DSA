@@ -1,3 +1,7 @@
+Reversing doubly linked list
+Reverse next pointers --> Left to right 
+then reverse prev pointer --> Right to left
+
 Are we doing redundant work?
 If yes, these can help avoid it
 
