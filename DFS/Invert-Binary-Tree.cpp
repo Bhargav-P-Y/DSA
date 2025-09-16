@@ -15,13 +15,15 @@
 
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        if(!root) return 0;
+    TreeNode* invertTree(TreeNode* root) {
+        if(!root) return nullptr;
 
-        int lh = maxDepth(root->left);
-        int rh = maxDepth(root->right);
+        swap(root->left, root->right);
+        invertTree(root->left);
+        invertTree(root->right);
 
-        return 1+ max(lh, rh);
+        return root;
         
     }
 };
+
