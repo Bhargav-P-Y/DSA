@@ -1,5 +1,5 @@
 # DSA
-DSA Pattern wise
+DSA Pattern & Concept wise
 
 Ask AI to become a MAANG interviewer <br>
 Ask modifications & follow-ups! <br>
