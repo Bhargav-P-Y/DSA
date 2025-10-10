@@ -1,3 +1,10 @@
+/*
+Why the 4^l, becasue each time you branch out to 4 paths
+In the worst case you might explore a branch entirely 
+only to find the last character mismatches then have to 
+backtrack, and this can happen for the 1st 3 branches
+*/
+
 class Solution {
 public:
     bool isSafe(int rows, int cols, int r, int c)
