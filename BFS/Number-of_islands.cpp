@@ -14,6 +14,13 @@ Loop through all 4 neighbors & only push if it's safe & is a 1
 Just switched from using a queue to a stack
 */
 
+/*
+TC: O(m*n), each cell is processed at most once
+SC: O(m*n) althought he queue doesn't holl all cells simultaneously
+ IN the middle of exploring a grid with all 1's say 
+ the space is proportional to the grid's dim, hence we say O(m*n(
+*/
+
 class Solution {
 public:
     bool isSafe(int r, int c, int rows, int cols)
