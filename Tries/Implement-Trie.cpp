@@ -1,5 +1,7 @@
 /*
 Tries are like n-ary trees!
+You don't need a separate ch member variable inside the Node class
+Because the children array's index acts as a letter itself!
 */
 
 class Node{
@@ -66,3 +68,4 @@ public:
     }
 
 };
+
