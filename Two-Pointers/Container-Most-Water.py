@@ -4,7 +4,7 @@ skip duplicates in threeSum.
 It’s not mandatory, but it’s a smart tradeoff 
 when correctness is preserved and the input size is large.
 
-Because the newarea <= current area, when we move any one poitner
+Because the newarea <= current area, when we move any one pointer
 """
 
 class Solution:
