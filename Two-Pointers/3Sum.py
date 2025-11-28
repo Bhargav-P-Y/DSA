@@ -1,10 +1,10 @@
-# SOr the array
+# Sort the array
 # Fix left, and adjust middle & right
- # You only need to move one of the pointers
-#After you found the sum = 0
+# You only need to move one of the pointers
+# After you found the sum = 0
 # Because then it will go back to either
 # sum > 0 or sum < 0 condition
-# FInd a triplet, then skip over duplicates
+# Find a triplet, then skip over duplicates
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
