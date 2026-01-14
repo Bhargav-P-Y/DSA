@@ -1,0 +1,11 @@
+Is the solution of the current problem based on the solution of smaller problems?
+Start with a simple recursive solution
+Solve the current piece and recurse with the samller portion
+
+In the recursive approach or we recalculating things?
+Memoize it in a array, hashmap or 2D table
+
+Are we using too much space?
+
+Try from the ground up, the base case
+Then build up through iteration
