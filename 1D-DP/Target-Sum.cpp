@@ -48,7 +48,8 @@ target = num(P) + num(N)
 
 SO num(P) = S + target /2
 Find positive combos to make that, fill negative nums in those ways
-return no. of positive combos
+No rearrangements of negatives are possible, because we take numbers in order
+return no. of positive combos, becasue in those ways only 1 way negative combo exists
 */
 
 class Solution {
