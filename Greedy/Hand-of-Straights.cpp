@@ -15,7 +15,7 @@ public:
         
         while(!freq.empty())
         {
-            int start = freq.begin().first;
+            int start = freq.begin()->first;
             for(int i = 0;i<groupSize;i++)
             {
                 int key = start + i;
