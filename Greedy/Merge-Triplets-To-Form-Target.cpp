@@ -16,9 +16,9 @@ public:
                 if(t[0] == target[0])
                     foundX = true;
                 if(t[1] == target[1])
-                    foundX = true;
+                    foundY = true;
                 if(t[2] == target[2])
-                    foundX = true;
+                    foundZ = true;
             }
         }
 
