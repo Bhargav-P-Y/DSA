@@ -1,7 +1,7 @@
-/* If meetings end quickly, then you can take more meetings & leave time for more
-*  So first sort by ending times in ascending order
-   then by start times
-*
+/* 
+If meetings end quickly, then you can take more meetings & leave time for more
+So first sort by ending times in ascending order
+then by start times
 */
 
 class Solution {
@@ -28,3 +28,4 @@ public:
         
     }
 };
+
