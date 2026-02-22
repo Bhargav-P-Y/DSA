@@ -10,27 +10,28 @@ class Solution:
         Decide when to add queries, start_i <= q
         & to remove them, end_i < q
         '''
-        queries.sort()
+
+        # Sort based on QUERIES
+        s_queries = sorted([(q, idx) for idx, q in enumerate(queries)])
         # Helps you decide when to include a query
         # if start time <= q
         intervals.sort(key = lambda p: p[0])
-        n = len(queries)
+        i, n = 0, len(intervals)
 
-        times, res = [], []
+        res = [-1] * len(queries)
+        times = []
 
-        for q in queries:
+        for q, idx in s_queries:
             while i < n and intervals[i][0] <= q:
                 l, r = intervals[i]
                 dur = r - l + 1
                 heapq.heappush(times, (dur, intervals[i][1]))
                 i +=1  
     
-            while len(times) > 0 and times[0][1] < q:
+            while times and times[0][1] < q:
                 heapq.heappop(times)
             
-            if len(times) > 0:
-                res.append(times[0][0])
-            else:
-                res.append(-1)
+            if times:
+                res[idx] = times[0][0]
             
         return res
