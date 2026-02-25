@@ -12,12 +12,15 @@ class Solution:
                 res.append(matrix[r][right])
             right -=1
 
-            if left <= right:
+            # Because we are traversing the bottom row
+            # We check to ensure we don't process the same row again
+            if top <= bottom:
                 for b in range(right, left-1, -1):
                     res.append(matrix[bottom][b])
                 bottom -=1
-            
-            if top <= bottom:
+                
+            # Similalry for the left columns
+            if left <= right:
                 for l in range(bottom, top-1, -1):
                     res.append(matrix[l][left])
                 left +=1
