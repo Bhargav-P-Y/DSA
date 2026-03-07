@@ -1,10 +1,6 @@
 '''
-You dont multiply by the frequency of 
-(qx, qy)
-again, because you're already iterating over each occurrence of  it
-implicitly. If you did, you'd double-count.
-
-The query point is fixed, not present in the map. Inferred from question
+The query point is fixed, not present in the map. So freq is 0
+Inferred from question
 
 Lists mutable -> so not hashable -> can't be a key
 Tuple immutable -> so hashable -> can be a key
@@ -21,7 +17,7 @@ class CountSquares:
     def count(self, point: List[int]) -> int:
         res = 0
 
-        for p in self.points:
+        for p in self.points: # WE ITERATE ACROSS the MAP
             cond1 = abs(p[0] - point[0]) == abs(p[1] - point[1])
             cond2 = (p[0] != point[0] and p[1] != point[1])
             if cond1 and cond2:
@@ -29,8 +25,9 @@ class CountSquares:
 
                 point1 = (point[0], qy)
                 point2 = (qx, point[1])
+                f1 = self.points.get(point1, 0)
+                f2 = self.points.get(point2, 0)
 
-                res += (self.points[point1] * self.points[point2])
+                res += (f1 * f2 * self.points[p])  # SO We need to count the diagonal point's freq as well
 
         return res
-
