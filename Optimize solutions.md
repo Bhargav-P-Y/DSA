@@ -1,32 +1,30 @@
-Reversing doubly linked list
-Reverse next pointers --> Left to right 
-then reverse prev pointer --> Right to left
-
 ## Are we doing redundant work?
 If yes, these can help avoid it
 
-Hashing
-Two Pointers [Slow (where you are now) Fast (where you want to be)]
-              Learn -> Ppl better than you, Teach --> You are better than them
-Sliding Window
-Precompute --> Prepare beforehand
-Dynamic programming
+### Hashing
+### Two Pointers 
+Slow (where you are now) Fast (where you want to be) <br>
+Learn -> Ppl better than you, Teach --> You are better than them <br>
+### Sliding Window 
+### Precompute --> Prepare beforehand 
+### Dynamic programming 
 
-## Check if something is feasible before doing something
-If a path is wrong --> Backtrack
-Store variables instead of repeatedly scanning stuff
+## Check if something is feasible before doing something!
+If a path is wrong --> Backtrack <br>
+Store variables instead of repeatedly scanning stuff <br>
 
 ## Have a goal?
-Work backwards from it!
-Think in Reverse
-One step at a time
+Work backwards from it! <br>
+Think in Reverse <br>
+One step at a time <br>
 
 ## Too hard?
 Make it easier, make it smaller -> Recursion
 
-Have tasks to do?
-Start with the longest task -> Let it run in the background
-Then start with the next longer
-Reorder them so you wait less
-
 ## Use what you already have!
+Save resources, variables instead of arrays
+
+Have tasks to do?
+Start with the longest task -> Let it run in the background <br>
+Then start with the next longer <br>
+Reorder them so you wait less <br>
