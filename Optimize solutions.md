@@ -24,7 +24,7 @@ Make it easier, make it smaller -> Recursion
 ## Use what you already have!
 Save resources, variables instead of arrays
 
-Have tasks to do?
+## Have tasks to do?
 Start with the longest task -> Let it run in the background <br>
 Then start with the next longer <br>
 Reorder them so you wait less <br>
