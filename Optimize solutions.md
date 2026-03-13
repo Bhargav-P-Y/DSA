@@ -2,11 +2,14 @@
 If yes, these can help avoid it
 
 ### Hashing
+Hashmap -> Keeps track of unique associations <br>
+Positions, frequenices, list of items etc
 ### Two Pointers 
 Slow (where you are now) Fast (where you want to be) <br>
 Learn -> Ppl better than you, Teach --> You are better than them <br>
 ### Sliding Window 
-### Precompute --> Prepare beforehand 
+### Precompute --> Prepare beforehand
+Prefix sums, O(1) answers!
 ### Dynamic programming 
 
 ## Check if something is feasible before doing something!
