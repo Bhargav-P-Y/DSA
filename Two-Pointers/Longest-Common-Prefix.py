@@ -10,6 +10,7 @@ class Solution:
 
         for word in strs:
             minlen = min(len(pref), len(word))
+            pref = pref[:minlen]
 
             for i in range(minlen):
                 if pref[i] != word[i]:
