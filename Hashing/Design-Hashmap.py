@@ -7,13 +7,15 @@ and each cell could have 100 entries
 It reduces the space used
 
 But I lose the unique association between the key and its value
-Or each cell in the array should store pairs of key & its value?
+So each cell in the array should store pairs of key & its value?
 
 SO first declare an array with 10_000 cells
+
+Don't forget to return root, this is recursion!
 '''
 class TreeNode:
     def __init__(self, key = 0, val= 0):
-        self.node = (key, val)
+        self.node = [key, val]
         self.left = None
         self.right = None
 
@@ -31,7 +33,7 @@ class BST:
         # Already exists then update & return
         if cur.node[0] == key:
             cur.node[1] = val
-            return
+            return cur
         
         if cur.node[0] > key:
             # recurse with left subtree
@@ -39,6 +41,8 @@ class BST:
         else:
             # otherwise the right subtree
             cur.right = self.insert(cur.right, key, val)
+        
+        return cur
 
 
     def minValueNode(self, cur):
@@ -79,6 +83,8 @@ class BST:
                 root.node = tmp.node
 
                 root.right = self.delete(root.right, tmp.node[0])
+        
+        return root
                 
 
     def search(self, cur, key):
