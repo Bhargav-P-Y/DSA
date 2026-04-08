@@ -1,17 +1,17 @@
- '''
-  Break down the large problem of sorting the entire array 
-  into 2 halves
-  Keep splitting until we only have a single element
-  Then compare and merge from the bottom-up
+'''
+Break down the large problem of sorting the entire array 
+into 2 halves
+Keep splitting until we only have a single element
+Then compare and merge from the bottom-up
 
-  Use mid & mid+1
-  not mid -1 as l== mid & doing mid -1 might lead to -1 index
-  '''
+Use mid & mid+1
+not mid -1 as l== mid & doing mid -1 might lead to -1 index
+'''
 
 class Solution:
     def merge(self, l, mid, r, nums):
-        left = nums[l:mid]
-        right = nums[mid:r+1]
+        left = nums[l:mid+1]   # IMPORTANT, mid+1
+        right = nums[mid+1:r+1]
 
         lp, rp = 0, 0
         # Not 0! the current left portion
