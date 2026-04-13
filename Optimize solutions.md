@@ -20,6 +20,7 @@ Store variables instead of repeatedly scanning stuff <br>
 Work backwards from it! <br>
 Think in Reverse <br>
 One step at a time <br>
+Incremental gains <br>
 
 ## Too hard?
 Make it easier, make it smaller -> Recursion
