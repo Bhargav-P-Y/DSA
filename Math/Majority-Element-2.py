@@ -27,14 +27,14 @@ class Solution:
 
         # Phase 1: Find the candidates
         for num in nums:
-            if freq1 == 0:
-                maj_1, freq1 = num, 1
-            elif freq2 == 0:
-                maj_2, freq2 = num, 1
-            elif maj_1 == num:
+            if maj_1 == num:
                 freq1 +=1
             elif maj_2 == num:
                 freq2 +=1
+            elif freq1 == 0:
+                maj_1, freq1 = num, 1
+            elif freq2 == 0:
+                maj_2, freq2 = num, 1
             else:
                 freq1 -=1
                 freq2 -=1
