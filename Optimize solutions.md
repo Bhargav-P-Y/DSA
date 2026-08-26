@@ -6,7 +6,7 @@ Hashmap -> Keeps track of unique associations <br>
 Positions, frequenices, list of items etc
 ### Two Pointers 
 Slow (where you are now) Fast (where you want to be) <br>
-Learn -> Ppl better than you, Teach --> You are better than them <br>
+Learn -> Ppl better than you, Teach --> People needing help & willing to listen <br>
 ### Sliding Window 
 ### Precompute --> Prepare beforehand
 Prefix sums, O(1) answers!
