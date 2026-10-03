@@ -8,7 +8,7 @@ Positions, frequenices, list of items etc
 Slow (where you are now) Fast (where you want to be) <br>
 Learn -> Ppl better than you, Teach --> People needing help & willing to listen <br>
 ### Sliding Window 
-### Precompute --> Prepare beforehand
+### Precompute --> Prepare beforehand once
 Prefix sums, O(1) answers!
 ### Dynamic programming 
 
